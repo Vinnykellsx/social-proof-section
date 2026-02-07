@@ -10,14 +10,6 @@
   box-sizing: border-box;
 }
 
-.desktop {
-  display: block;
-}
-
-.mobile {
-  display: none;
-}
-
 body {
   background-color: var(--light-grayish-magenta);
   color: var(--very-Dark-Magenta);
@@ -156,78 +148,4 @@ span {
 .reviexts {
   line-height: 0.85rem;
   color: var(--light-grayish-magenta);
-}
-
-@media (max-width: 430px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  body {
-    overflow: visible;
-    /* background-color: red; */
-  }
-
-  .bg-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  .bg-bottom {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-  }
-
-  .page {
-    max-width: 95%;;
-  }
-
-  .up-section {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  h2,
-  .promise {
-    width: 100%;
-  }
-
-  h2{
-    width: 20rem;
-    margin-top: 20px;
-    font-size: 2.5rem;
-  }
-
-  .promise{
-    width: 20rem;
-    font-size: 1rem;
-  }
-
-  .ratings {
-    width: 100%;
-  }
-
-  .rate {
-    margin-left: 0 !important; /* 🔥 kill desktop offsets */
-    width: 100%;
-    justify-content: center;
-  }
-
-  .down-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .review {
-    width: 100%;
-  }
 }
