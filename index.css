@@ -167,9 +167,13 @@ span {
     display: block;
   }
 
+  html {
+    background-color: var(--light-grayish-magenta);
+  }
+
   body {
     overflow: visible;
-    /* background-color: red; */
+    margin: 100px 0;
   }
 
   .bg-top {
@@ -187,7 +191,7 @@ span {
   }
 
   .page {
-    max-width: 95%;;
+    max-width: 95%;
   }
 
   .up-section {
@@ -201,15 +205,16 @@ span {
     width: 100%;
   }
 
-  h2{
+  h2 {
     width: 20rem;
     margin-top: 20px;
     font-size: 2.5rem;
   }
 
-  .promise{
+  .promise {
     width: 20rem;
-    font-size: 1rem;
+    font-size: 1.09rem;
+    line-height: 1.5rem;
   }
 
   .ratings {
@@ -217,9 +222,22 @@ span {
   }
 
   .rate {
-    margin-left: 0 !important; /* 🔥 kill desktop offsets */
+    margin-left: 0 !important;
     width: 100%;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+
+  .image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ratext {
+    font-size: 1.1rem;
+    margin-left: 0;
   }
 
   .down-section {
@@ -229,5 +247,20 @@ span {
 
   .review {
     width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .info{
+    line-height: 1.5rem;
+    gap: 20px;
+  }
+
+  .avatar{
+    width: 50px;
+    height: 50px;
+  }
+
+  .reviexts{
+    line-height: 1.5rem;
   }
 }
